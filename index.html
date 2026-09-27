@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="pt-AO">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bernardino Barroso — Designer Gráfico</title>
+<meta name="description" content="Portfólio de Bernardino Barroso, Designer Gráfico em Luanda, Angola. Branding, peças promocionais e identidade visual.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Roboto+Condensed:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header" id="topo">
+  <div class="header-inner">
+    <a href="#main" class="brand">MEU PORTFÓLIO</a>
+
+    <nav class="nav-center" aria-label="Navegação principal">
+      <ul class="nav-links">
+        <li><a href="#main" class="nav-link" data-section="main">Main</a></li>
+        <li><a href="#galeria" class="nav-link" data-section="galeria">Minhas Artes</a></li>
+        <li><a href="#sobre" class="nav-link" data-section="sobre">Sobre Mim</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-right">
+      <a href="#contacto" class="nav-link nav-link--ghost" data-section="contacto">Contacta-me</a>
+      <a href="assets/cv/Curriculo-Bernardino-Barroso.pdf" download class="btn btn--outline">Descarregar Currículo</a>
+    </div>
+
+    <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="drawer">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ===== DRAWER (mobile) ===== -->
+<div class="drawer-overlay" id="drawerOverlay"></div>
+<aside class="drawer" id="drawer" aria-hidden="true">
+  <button class="drawer-close" id="drawerClose" aria-label="Fechar menu">&times;</button>
+  <ul class="drawer-links">
+    <li><a href="#main" class="nav-link" data-section="main">Main</a></li>
+    <li><a href="#galeria" class="nav-link" data-section="galeria">Minhas Artes</a></li>
+    <li><a href="#sobre" class="nav-link" data-section="sobre">Sobre Mim</a></li>
+    <li><a href="#contacto" class="nav-link" data-section="contacto">Contacta-me</a></li>
+  </ul>
+  <a href="assets/cv/Curriculo-Bernardino-Barroso.pdf" download class="btn btn--solid drawer-cv">Descarregar Currículo</a>
+</aside>
+
+<main>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="main">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="hero-kicker">Designer Gráfico · Luanda, Angola</p>
+        <h1 class="hero-title">Design com <em>propósito</em>.<br>Design que <em>vende</em>.</h1>
+        <p class="hero-subtitle">Meu nome é Bernardino Barroso. Crio identidades visuais, peças promocionais e material gráfico que dão vida a eventos, marcas e projetos.</p>
+        <a href="#galeria" class="btn btn--solid hero-cta">Explorar minhas artes</a>
+      </div>
+      <div class="hero-media">
+        <img src="assets/img/bernardino-hero.png" alt="Retrato de Bernardino Barroso" class="hero-photo">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALERIA ===== -->
+  <section class="galeria" id="galeria">
+    <div class="section-inner">
+      <h2 class="section-title">Minhas Artes</h2>
+      <p class="section-lead">Uma seleção de peças gráficas, identidades e materiais promocionais desenvolvidos por mim.</p>
+
+      <div class="gallery-grid" id="galleryGrid">
+        <!-- Itens de exemplo — substitui a imagem de fundo de cada .gallery-card
+             (na secção "GALLERY PLACEHOLDER DATA" do style.css ou via style="background-image:url(...)")
+             pelas imagens reais dos teus projectos. -->
+        <figure class="gallery-card" data-category="impressos" style="--card-a:#102544; --card-b:#2f6fff;">
+          <div class="gallery-card-media">
+            <img src="assets/arts/01.jpg" loading="lazy" decoding="async" alt="Uma arte minha">
+          </div>
+          <figcaption class="gallery-card-info">
+            <span class="gallery-card-title">Cartão de Agradecimento</span>
+          </figcaption>
+        </figure>
+        <figure class="gallery-card" data-category="impressos" style="--card-a:#102544; --card-b:#2f6fff;">
+          <div class="gallery-card-media">
+            <img src="assets/arts/02.jpg" loading="lazy" decoding="async" alt="Uma arte minha">
+          </div>
+          <figcaption class="gallery-card-info">
+            <span class="gallery-card-title">Cartão de Visita - Frente</span>
+          </figcaption>
+        </figure>
+        <figure class="gallery-card" data-category="impressos" style="--card-a:#102544; --card-b:#2f6fff;">
+          <div class="gallery-card-media">
+            <img src="assets/arts/03.jpg" loading="lazy" decoding="async" alt="Uma arte minha">
+          </div>
+          <figcaption class="gallery-card-info">
+            <span class="gallery-card-title">Cartão de Visita - Verso</span>
+          </figcaption>
+        </figure>
+        <figure class="gallery-card" data-category="impressos" style="--card-a:#102544; --card-b:#2f6fff;">
+          <div class="gallery-card-media">
+            <img src="assets/arts/004.jpg" loading="lazy" decoding="async" alt="Uma arte minha">
+          </div>
+          <figcaption class="gallery-card-info">
+            <span class="gallery-card-title">Cartão de Visita - Mockup</span>
+          </figcaption>
+        </figure>
+        <figure class="gallery-card" data-category="impressos" style="--card-a:#102544; --card-b:#2f6fff;">
+          <div class="gallery-card-media">
+            <img src="assets/arts/04.jpg" loading="lazy" decoding="async" alt="Uma arte minha">
+          </div>
+          <figcaption class="gallery-card-info">
+            <span class="gallery-card-title">Imposição de Cartão Para Impressão</span>
+          </figcaption>
+        </figure>
+        <figure class="gallery-card" data-category="impressos" style="--card-a:#102544; --card-b:#2f6fff;">
+          <div class="gallery-card-media">
+            <img src="assets/arts/05.jpg" loading="lazy" decoding="async" alt="Uma arte minha">
+          </div>
+          <figcaption class="gallery-card-info">
+            <span class="gallery-card-title">Convite de Casamento</span>
+          </figcaption>
+        </figure>
+        <figure class="gallery-card" data-category="impressos" style="--card-a:#102544; --card-b:#2f6fff;">
+          <div class="gallery-card-media">
+            <img src="assets/arts/06.jpg" loading="lazy" decoding="async" alt="Uma arte minha">
+          </div>
+          <figcaption class="gallery-card-info">
+            <span class="gallery-card-title">Convite de Casamento - Premium</span>
+          </figcaption>
+        </figure>
+        <figure class="gallery-card" data-category="impressos" style="--card-a:#102544; --card-b:#2f6fff;">
+          <div class="gallery-card-media">
+            <img src="assets/arts/007.png" loading="lazy" decoding="async" alt="Uma arte minha">
+          </div>
+          <figcaption class="gallery-card-info">
+            <span class="gallery-card-title">Flyer Light</span>
+          </figcaption>
+        </figure>
+        <figure class="gallery-card" data-category="impressos" style="--card-a:#102544; --card-b:#2f6fff;">
+          <div class="gallery-card-media">
+            <img src="assets/arts/07.png" loading="lazy" decoding="async" alt="Uma arte minha">
+          </div>
+          <figcaption class="gallery-card-info">
+            <span class="gallery-card-title">Capa de E-Book</span>
+          </figcaption>
+        </figure>
+        <figure class="gallery-card" data-category="impressos" style="--card-a:#102544; --card-b:#2f6fff;">
+          <div class="gallery-card-media">
+            <img src="assets/arts/08.jpg" loading="lazy" decoding="async" alt="Uma arte minha">
+          </div>
+          <figcaption class="gallery-card-info">
+            <span class="gallery-card-title">Flyer Para Mídias Digitais</span>
+          </figcaption>
+        </figure>
+        <figure class="gallery-card" data-category="impressos" style="--card-a:#102544; --card-b:#2f6fff;">
+          <div class="gallery-card-media">
+            <img src="assets/arts/09.png" loading="lazy" decoding="async" alt="Uma arte minha">
+          </div>
+          <figcaption class="gallery-card-info">
+            <span class="gallery-card-title">Flyer Promocional</span>
+          </figcaption>
+        </figure>
+        <figure class="gallery-card" data-category="impressos" style="--card-a:#102544; --card-b:#2f6fff;">
+          <div class="gallery-card-media">
+            <img src="assets/arts/10.jpg" loading="lazy" decoding="async" alt="Uma arte minha">
+          </div>
+          <figcaption class="gallery-card-info">
+            <span class="gallery-card-title">Flyer Para Mídias Digitais</span>
+          </figcaption>
+        </figure>
+        <figure class="gallery-card" data-category="impressos" style="--card-a:#102544; --card-b:#2f6fff;">
+          <div class="gallery-card-media">
+            <img src="assets/arts/11.png" loading="lazy" decoding="async" alt="Uma arte minha">
+          </div>
+          <figcaption class="gallery-card-info">
+            <span class="gallery-card-title">Flyer Promocional — Impresão</span>
+          </figcaption>
+        </figure>
+        <figure class="gallery-card" data-category="impressos" style="--card-a:#102544; --card-b:#2f6fff;">
+          <div class="gallery-card-media">
+            <img src="assets/arts/12.jpg" loading="lazy" decoding="async" alt="Uma arte minha">
+          </div>
+          <figcaption class="gallery-card-info">
+            <span class="gallery-card-title">Flyer Promocional — Impresão</span>
+          </figcaption>
+        </figure>
+        <figure class="gallery-card" data-category="impressos" style="--card-a:#102544; --card-b:#2f6fff;">
+          <div class="gallery-card-media">
+            <img src="assets/arts/13.jpg" loading="lazy" decoding="async" alt="Uma arte minha">
+          </div>
+          <figcaption class="gallery-card-info">
+            <span class="gallery-card-title">Flyer de Evento</span>
+          </figcaption>
+        </figure>
+        <figure class="gallery-card" data-category="impressos" style="--card-a:#102544; --card-b:#2f6fff;">
+          <div class="gallery-card-media">
+            <img src="assets/arts/14.jpg" loading="lazy" decoding="async" alt="Uma arte minha">
+          </div>
+          <figcaption class="gallery-card-info">
+            <span class="gallery-card-title">Flyer Promocional — Evento</span>
+          </figcaption>
+        </figure>
+        <figure class="gallery-card" data-category="impressos" style="--card-a:#102544; --card-b:#2f6fff;">
+          <div class="gallery-card-media">
+            <img src="assets/arts/15.jpg" loading="lazy" decoding="async" alt="Uma arte minha">
+          </div>
+          <figcaption class="gallery-card-info">
+            <span class="gallery-card-title">Imposição de Flyer Para Impressão</span>
+          </figcaption>
+        </figure>
+        <figure class="gallery-card" data-category="impressos" style="--card-a:#102544; --card-b:#2f6fff;">
+          <div class="gallery-card-media">
+            <img src="assets/arts/17.jpg" loading="lazy" decoding="async" alt="Uma arte minha">
+          </div>
+          <figcaption class="gallery-card-info">
+            <span class="gallery-card-title">Logotipo - Variação de Cor</span>
+          </figcaption>
+        </figure>
+        <figure class="gallery-card" data-category="impressos" style="--card-a:#102544; --card-b:#2f6fff;">
+          <div class="gallery-card-media">
+            <img src="assets/arts/18.jpg" loading="lazy" decoding="async" alt="Uma arte minha">
+          </div>
+          <figcaption class="gallery-card-info">
+            <span class="gallery-card-title">Logotipo - Young Wizen</span>
+          </figcaption>
+        </figure>
+        <figure class="gallery-card" data-category="impressos" style="--card-a:#102544; --card-b:#2f6fff;">
+          <div class="gallery-card-media">
+            <img src="assets/arts/19.png" loading="lazy" decoding="async" alt="Uma arte minha">
+          </div>
+          <figcaption class="gallery-card-info">
+            <span class="gallery-card-title">Logotipo - JS Calçados</span>
+          </figcaption>
+        </figure>
+        <figure class="gallery-card" data-category="impressos" style="--card-a:#102544; --card-b:#2f6fff;">
+          <div class="gallery-card-media">
+            <img src="assets/arts/20.jpg" loading="lazy" decoding="async" alt="Uma arte minha">
+          </div>
+          <figcaption class="gallery-card-info">
+            <span class="gallery-card-title">Logotipo - Mambos Fixe</span>
+          </figcaption>
+        </figure>
+        <figure class="gallery-card" data-category="impressos" style="--card-a:#102544; --card-b:#2f6fff;">
+          <div class="gallery-card-media">
+            <img src="assets/arts/21.png" loading="lazy" decoding="async" alt="Uma arte minha">
+          </div>
+          <figcaption class="gallery-card-info">
+            <span class="gallery-card-title">Logotipo - JS Eventos</span>
+          </figcaption>
+        </figure>
+        <figure class="gallery-card" data-category="impressos" style="--card-a:#102544; --card-b:#2f6fff;">
+          <div class="gallery-card-media">
+            <img src="assets/arts/22.png" loading="lazy" decoding="async" alt="Uma arte minha">
+          </div>
+          <figcaption class="gallery-card-info">
+            <span class="gallery-card-title">Arte Para Mídias Digitais - (Exercício)</span>
+          </figcaption>
+        </figure>
+        <figure class="gallery-card" data-category="impressos" style="--card-a:#102544; --card-b:#2f6fff;">
+          <div class="gallery-card-media">
+            <img src="assets/arts/23.png" loading="lazy" decoding="async" alt="Uma arte minha">
+          </div>
+          <figcaption class="gallery-card-info">
+            <span class="gallery-card-title">Flyer Promocional Para Mídias Digitais</span>
+          </figcaption>
+        </figure>
+        <figure class="gallery-card" data-category="impressos" style="--card-a:#102544; --card-b:#2f6fff;">
+          <div class="gallery-card-media">
+            <img src="assets/arts/24.png" loading="lazy" decoding="async" alt="Uma arte minha">
+          </div>
+          <figcaption class="gallery-card-info">
+            <span class="gallery-card-title">Arte Para Mídias Sociais</span>
+          </figcaption>
+        </figure>
+        <figure class="gallery-card" data-category="impressos" style="--card-a:#102544; --card-b:#2f6fff;">
+          <div class="gallery-card-media">
+            <img src="assets/arts/25.jpg" loading="lazy" decoding="async" alt="Uma arte minha">
+          </div>
+          <figcaption class="gallery-card-info">
+            <span class="gallery-card-title">Criativo Para Anúncio em Mídias Digitais</span>
+          </figcaption>
+        </figure>
+        <figure class="gallery-card" data-category="impressos" style="--card-a:#102544; --card-b:#2f6fff;">
+          <div class="gallery-card-media">
+            <img src="assets/arts/26.jpg" loading="lazy" decoding="async" alt="Uma arte minha">
+          </div>
+          <figcaption class="gallery-card-info">
+            <span class="gallery-card-title">Capa de Música - "Me Xibavas"</span>
+          </figcaption>
+        </figure>
+        <figure class="gallery-card" data-category="impressos" style="--card-a:#102544; --card-b:#2f6fff;">
+          <div class="gallery-card-media">
+            <img src="assets/arts/27.jpg" loading="lazy" decoding="async" alt="Uma arte minha">
+          </div>
+          <figcaption class="gallery-card-info">
+            <span class="gallery-card-title">Capa de Música - "Eu Não Posso Parar de Tentar"</span>
+          </figcaption>
+        </figure>
+        <figure class="gallery-card" data-category="impressos" style="--card-a:#102544; --card-b:#2f6fff;">
+          <div class="gallery-card-media">
+            <img src="assets/arts/29.jpg" loading="lazy" decoding="async" alt="Uma arte minha">
+          </div>
+          <figcaption class="gallery-card-info">
+            <span class="gallery-card-title">Agenda de Eventos</span>
+          </figcaption>
+        </figure>
+        <figure class="gallery-card" data-category="impressos" style="--card-a:#102544; --card-b:#2f6fff;">
+          <div class="gallery-card-media">
+            <img src="assets/arts/30.png" loading="lazy" decoding="async" alt="Uma arte minha">
+          </div>
+          <figcaption class="gallery-card-info">
+            <span class="gallery-card-title">Banner Para Foto de Perfil</span>
+          </figcaption>
+        </figure>
+        <figure class="gallery-card" data-category="impressos" style="--card-a:#102544; --card-b:#2f6fff;">
+          <div class="gallery-card-media">
+            <img src="assets/arts/31.png" loading="lazy" decoding="async" alt="Uma arte minha">
+          </div>
+          <figcaption class="gallery-card-info">
+            <span class="gallery-card-title">Capa de Música - "RICH"</span>
+          </figcaption>
+        </figure>
+        <figure class="gallery-card" data-category="impressos" style="--card-a:#102544; --card-b:#2f6fff;">
+          <div class="gallery-card-media">
+            <img src="assets/arts/32.jpg" loading="lazy" decoding="async" alt="Uma arte minha">
+          </div>
+          <figcaption class="gallery-card-info">
+            <span class="gallery-card-title">Banner Para Rapper</span>
+          </figcaption>
+        </figure>
+        <figure class="gallery-card" data-category="impressos" style="--card-a:#102544; --card-b:#2f6fff;">
+          <div class="gallery-card-media">
+            <img src="assets/arts/33.jpg" loading="lazy" decoding="async" alt="Uma arte minha">
+          </div>
+          <figcaption class="gallery-card-info">
+            <span class="gallery-card-title">Capa de Música - "Então Vem" </span>
+          </figcaption>
+        </figure>
+        <figure class="gallery-card" data-category="impressos" style="--card-a:#102544; --card-b:#2f6fff;">
+          <div class="gallery-card-media">
+            <img src="assets/arts/34.jpg" loading="lazy" decoding="async" alt="Uma arte minha">
+          </div>
+          <figcaption class="gallery-card-info">
+            <span class="gallery-card-title">Banner - (Exercício de Ambientação)</span>
+          </figcaption>
+        </figure>
+        <figure class="gallery-card" data-category="impressos" style="--card-a:#102544; --card-b:#2f6fff;">
+          <div class="gallery-card-media">
+            <img src="assets/arts/35.jpg" loading="lazy" decoding="async" alt="Uma arte minha">
+          </div>
+          <figcaption class="gallery-card-info">
+            <span class="gallery-card-title">Capa de Música - "Hoje A Casa Cai"</span>
+          </figcaption>
+        </figure>
+        <figure class="gallery-card" data-category="impressos" style="--card-a:#102544; --card-b:#2f6fff;">
+          <div class="gallery-card-media">
+            <img src="assets/arts/36.jpg" loading="lazy" decoding="async" alt="Uma arte minha">
+          </div>
+          <figcaption class="gallery-card-info">
+            <span class="gallery-card-title">Capa de Música - "Oh My Gog"</span>
+          </figcaption>
+        </figure>
+        <figure class="gallery-card" data-category="impressos" style="--card-a:#102544; --card-b:#2f6fff;">
+          <div class="gallery-card-media">
+            <img src="assets/arts/37.jpg" loading="lazy" decoding="async" alt="Uma arte minha">
+          </div>
+          <figcaption class="gallery-card-info">
+            <span class="gallery-card-title">Capa de Música - "Borderons"</span>
+          </figcaption>
+        </figure>
+        <figure class="gallery-card" data-category="impressos" style="--card-a:#102544; --card-b:#2f6fff;">
+          <div class="gallery-card-media">
+            <img src="assets/arts/38.jpg" loading="lazy" decoding="async" alt="Uma arte minha">
+          </div>
+          <figcaption class="gallery-card-info">
+            <span class="gallery-card-title">Capa de Música - "Contos de Fada"</span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SOBRE MIM ===== -->
+  <section class="sobre" id="sobre">
+    <div class="section-inner sobre-inner">
+      <div class="sobre-text">
+        <h2 class="section-title">Sobre Mim</h2>
+        <p class="sobre-bio">Trabalho por conta própria como Designer Gráfico desde 2021, com foco em produção de peças promocionais e material gráfico para eventos e empresas. Também já actuei como Desenvolvedor Full Stack e Web Designer, o que me dá uma visão completa entre design e implementação digital.</p>
+        <p class="sobre-bio">Algumas das minhas qualidades:</p>
+
+        <div class="sobre-qualidades">
+          <span class="pill">Criatividade</span>
+          <span class="pill">Honestidade</span>
+          <span class="pill">Pontualidade</span>
+          <span class="pill">Responsabilidade</span>
+        </div>
+
+        <h3 class="sobre-subtitle">Ferramentas</h3>
+        <div class="tools">
+          <div class="tool">
+            <span class="tool-badge tool-badge--ps">Ps</span>
+            <span>Adobe Photoshop</span>
+          </div>
+          <div class="tool">
+            <span class="tool-badge tool-badge--ai">Ai</span>
+            <span>Adobe Illustrator</span>
+          </div>
+          <div class="tool">
+            <span class="tool-badge tool-badge--cd">Cd</span>
+            <span>CorelDRAW</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACTO ===== -->
+  <section class="contacto" id="contacto">
+    <div class="contacto-side contacto-side--accent">
+      <h2 class="contacto-heading">Precisas de um designer gráfico criativo para dar vida as tuas ideias?</h2>
+      <p class="contacto-text">Entra em contacto — respondo o mais rápido possível.</p>
+    </div>
+    <div class="contacto-side contacto-side--neutral">
+      <ul class="contacto-list">
+        <li>
+          <span class="contacto-label">Telefone</span>
+          <a href="tel:+244900000000">+244 925 583 740</a>
+        </li>
+        <li>
+          <span class="contacto-label">Telefone (WhatsApp)</span>
+          <a href="tel:+244900000001">+244 955 476 017</a>
+        </li>
+        <li>
+          <span class="contacto-label">Email</span>
+          <a href="mailto:barrosob2022@gmail.com">barrosob2022@gmail.com</a>
+        </li>
+      </ul>
+      <a href="assets/cv/Curriculo-Bernardino-Barroso.pdf" download class="btn btn--solid">Descarregar Currículo</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== LIGHTBOX ===== -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Fechar">&times;</button>
+  <div class="lightbox-content">
+    <div class="lightbox-media" id="lightboxMedia"></div>
+    <div class="lightbox-info">
+      <h3 id="lightboxTitle"></h3>
+    </div>
+  </div>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <p>Página criada por Bernardino Barroso &copy; 2026</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
